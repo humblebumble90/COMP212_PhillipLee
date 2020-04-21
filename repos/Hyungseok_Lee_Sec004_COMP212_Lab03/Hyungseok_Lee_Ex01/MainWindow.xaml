@@ -1,0 +1,38 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hyungseok_Lee_Ex01"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="Hyungseok_Lee_Ex01.MainWindow"
+        mc:Ignorable="d"
+        Title="Calculator" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="lb_Name" Content="Name of Patient" HorizontalAlignment="Left" Margin="53,59,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.948,0.727" FontWeight="Bold"/>
+        <Label x:Name="lb_Address" Content="Address" HorizontalAlignment="Left" Margin="85,103,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="lb_Title" Content="Dental Patient System" HorizontalAlignment="Left" Margin="301,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
+        <TextBox x:Name="txtBox_Addres" HorizontalAlignment="Left" Height="23" Margin="173,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="217"/>
+        <TextBox x:Name="txtbox_Name" HorizontalAlignment="Left" Height="23" Margin="173,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="217" TextChanged="Txtbox_Name_TextChanged"/>
+        <Label x:Name="lb_ServiceType" Content="Dental Service Available" HorizontalAlignment="Left" Margin="573,59,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <CheckBox x:Name="chckBox_Flossing" Content="Flossing" HorizontalAlignment="Left" Margin="523,106,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <CheckBox x:Name="chckBox_Filling" Content="Filling" HorizontalAlignment="Left" Margin="523,137,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <CheckBox x:Name="chckBox_RootCanal" Content="Root Canal" HorizontalAlignment="Left" Margin="523,173,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="lb_FlossingPrice" Content="$ 20.00" HorizontalAlignment="Left" Margin="706,103,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lb_FillingPrice" Content="$ 75.00" HorizontalAlignment="Left" Margin="706,129,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lb_RootCanalPrice" Content="$ 150.00" HorizontalAlignment="Left" Margin="706,163,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.344,1.133"/>
+        <RadioButton x:Name="radioBtn_Senior" Content="Senior" HorizontalAlignment="Left" Margin="73,177,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="radioBtn_Youth" Content="Kid and Youth" HorizontalAlignment="Left" Margin="152,177,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="RadioBtn_Adult" Content="Adult" HorizontalAlignment="Left" Margin="255,177,0,0" VerticalAlignment="Top"/>
+        <RichTextBox x:Name="richTxtBox_Result" HorizontalAlignment="Left" Height="142" Margin="53,254,0,0" VerticalAlignment="Top" Width="310" TextChanged="RichTextBox_TextChanged">
+            <FlowDocument/>
+        </RichTextBox>
+        <Button x:Name="btn_Calculate" Content="Calculate" HorizontalAlignment="Left" Margin="613,242,0,0" VerticalAlignment="Top" Width="141" Height="47" FontSize="20" FontWeight="Bold" Click="Btn_Calculate_Click" RenderTransformOrigin="0.4,0.83"/>
+        <ComboBox x:Name="ComboBx_Province" HorizontalAlignment="Left" Margin="173,134,0,0" VerticalAlignment="Top" Width="120">
+            <System:String>Alberta</System:String>
+            <System:String>Ontario</System:String>
+            <System:String>Quebec</System:String>
+        </ComboBox>
+        <Label x:Name="label" Content="Province" HorizontalAlignment="Left" Margin="85,137,0,0" VerticalAlignment="Top" Width="70" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
